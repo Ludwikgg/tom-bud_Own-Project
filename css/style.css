@@ -194,7 +194,7 @@ body {
     background-color: rgba(100, 120, 138, 1);
   }
 
-  .middle__section .card {
+  .middle__section .info-card {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -208,7 +208,7 @@ body {
     border-radius: 8px;
   }
 
-  .card .fa-solid {
+  .info-card .fa-solid {
     font-size: 40px;
     border-bottom: 3px solid var(--darkshadow);
     padding-bottom: 20px;
@@ -216,7 +216,7 @@ body {
     margin-top: 4vh;
   }
 
-  .card .description {
+  .info-card .description {
     color: var(--whitegrey);
     font-size: 3vh;
     margin-bottom: 4vh;
@@ -241,6 +241,7 @@ body {
     height: 100vh;
     position: absolute;
     top: 100vh;
+    left: calc(50% - (80%/2));
     width: 80%;
   }
 
@@ -257,7 +258,7 @@ body {
     font-size: 3vh;
     text-align: justify;
     color: var(--whitegrey);
-    padding: 5vh 0;
+    padding: 3vh 0;
     border-bottom: 3px solid var(--darkshadow);
   }
 
@@ -270,7 +271,7 @@ body {
   }
 
   .skills__section .skills_tittle {
-    margin-bottom: 3vh;
+    margin-bottom: 4vh;
     text-transform: uppercase;
     font-size: 3vh;
     text-align: center;
@@ -281,8 +282,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 5vw;
-    justify-content: space-around;
+    margin-left: 9vw;
+    justify-content: space-between;
   }
 
   .skills_list .skills_elements {
@@ -297,7 +298,55 @@ body {
     text-align: left;
   }
 
-  /* TODO: Stworzyc kolejna sekcje
+
+  /* TODO: ogarnac carousel na samsungach w vw*/
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 200vh;
+    left: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .carousel .works_tittle {
+    font-size: 3vh;
+    border-bottom: 3px solid var(--darkshadow);
+    color: var(--whitegrey);
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    margin: 5vh 0;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .carousel .carousel-item {
+    height: 90%;
+  }
+
+  .carousel .carousel-item img {
+    height: 100%;
+  }
+
+  .carousel .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+  }
+
+  .carousel .carousel-caption h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .carousel .carousel-caption p {
+    margin: 0 5%;
+  }
 
 
   /* .middle__section .card {
