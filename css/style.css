@@ -415,13 +415,24 @@ body {
   }
 
   .contact_txt {
-    padding-top: 3%;
     font-size: 1.1rem;
   }
 
-  .contact_data i.fa-regular {
-    padding-right: 5px;
+  .contact_data_case {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3%;
+  }
+
+  .contact_data_case i.fa-regular {
+    margin-bottom: 4%;
+    margin-right: 3%;
     font-size: 1.5rem;
+  }
+
+  .contact_data_case .contact_case_txt {
+    font-size: 1.1rem;
   }
 
   /* DOKOŃCZYĆ STYLKOWANIE KONTAKTÓW, POMYŚLEĆ NAD NASTĘPNĄ SEKCJĄ */
