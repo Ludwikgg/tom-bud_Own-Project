@@ -81,7 +81,7 @@ body {
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     top: 0;
     left: 0;
     z-index: 2;
@@ -96,6 +96,7 @@ body {
     font-family: 'Maven Pro', sans-serif;
     font-size: 8vw;
     font-weight: bold;
+    margin-left: 8%;
   }
 
   .nav__section .nav__list {
@@ -108,6 +109,7 @@ body {
     border: 0;
     color: var(--whitegrey);
     cursor: pointer;
+    margin-right: 8%;
   }
 
   .header__description {
@@ -401,11 +403,25 @@ body {
   }
 
   .adress .adress_tittle,
-  .work_hours .hours_tittle,
-  .contact_data .contact_tittle {
+  .work_hours .hours_tittle {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
+  }
+
+  .contact_data .contact_tittle {
+    font-size: 1, 5rem;
+    font-weight: bold;
+  }
+
+  .contact_txt {
+    padding-top: 3%;
+    font-size: 1.1rem;
+  }
+
+  .contact_data i.fa-regular {
+    padding-right: 5px;
+    font-size: 1.5rem;
   }
 
   /* DOKOŃCZYĆ STYLKOWANIE KONTAKTÓW, POMYŚLEĆ NAD NASTĘPNĄ SEKCJĄ */
