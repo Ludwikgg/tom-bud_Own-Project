@@ -39,7 +39,6 @@ body {
   width: 100%;
 }
 
-
 .header__section {
   display: flex;
   align-items: center;
@@ -54,7 +53,6 @@ body {
   max-width: 100%;
 }
 
-/* .top_main__bg */
 .header__bg {
   height: 100%;
   width: 100%;
@@ -177,7 +175,7 @@ body {
   position: absolute;
   top: 100vh;
   left: 0;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   background-color: rgba(100, 120, 138, 1);
 }
@@ -228,7 +226,7 @@ body {
   text-align: center;
   height: 100vh;
   position: absolute;
-  top: 100vh;
+  top: 120vh;
   left: calc(50% - (80%/2));
   width: 80%;
 }
@@ -267,7 +265,6 @@ body {
   text-transform: uppercase;
   font-size: 1.4rem;
   text-align: center;
-
 }
 
 .skills__section .skills_list {
@@ -290,20 +287,21 @@ body {
   text-align: left;
 }
 
-.carousel {
+.carousel__section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  top: 210vh;
+  top: 230vh;
   left: 0;
   height: 100vh;
+  width: 100%;
   font-family: 'Roboto', sans-serif;
   margin-top: 0 !important;
 }
 
-.carousel .works_tittle {
+.carousel__section .works_tittle {
   font-size: 1.3rem;
   border-bottom: 3px solid var(--darkshadow);
   color: var(--whitegrey);
@@ -356,7 +354,7 @@ body {
   margin-left: 3vh;
   padding-top: 5vh;
   justify-content: center;
-  top: 300vh;
+  top: 320vh;
   left: 0;
   width: 100%;
   height: 100vh;
@@ -388,7 +386,7 @@ body {
 }
 
 .contact_data .contact_tittle {
-  font-size: 1, 5rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -423,39 +421,29 @@ body {
 
 .footer_section {
   position: absolute;
-  top: 385vh;
+  top: 400vh;
   left: 0;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-top: 10%;
+  justify-content: space-around;
+  margin-top: 10vh;
+  height: 10vh;
+  background-color: var(--darklighter);
 }
 
 .footer_section .attribution,
-.attribution a {
+.footer_section .attribution a,
+.tom-bud_attribtion {
+  margin-top: 2%;
   color: var(--whitegrey);
   text-decoration: none;
   font-size: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 1%;
 }
-
-.footer_section .social_icons {
-  display: flex;
-  width: 50%;
-  justify-content: space-around;
-}
-
-.social_icons .fa {
-  font-size: 30px;
-  text-decoration: none;
-  padding-bottom: 20px;
-  color: var(--whitegrey)
-}
-
-
-
-
-
 
 @media (min-width:768px) {
   .nav__section .nav_logo_name {
@@ -531,7 +519,7 @@ body {
     top: 185vh;
   }
 
-  .carousel .works_tittle {
+  .carousel__section .works_tittle {
     font-size: 4vh;
     border-bottom: 4px solid var(--darkshadow);
     margin: 5vh 8vh;
@@ -563,4 +551,169 @@ body {
 
 @media (min-width:1200px) {}
 
-@media (min-width:1400x) {}
+@media (min-width:1400px) {}
+
+@media(orientation: landscape) {
+  .nav__section {
+    height: 15vh;
+  }
+
+  .nav__section .nav_logo_name {
+    font-size: 4vw;
+  }
+
+  .nav__section .nav__btn {
+    font-size: 5vw;
+  }
+
+  .header__description .tittle__description {
+    top: 40%;
+    font-size: 6vw;
+  }
+
+  .header__description .second_tittle__description {
+    top: 55%;
+    font-size: 5vw;
+  }
+
+  .bottom__section {
+    width: 50%;
+    height: 15vh;
+  }
+
+  .bottom__description .bottom__btn {
+    font-size: 3vw;
+    margin-left: -20%;
+    margin-right: auto;
+    padding-bottom: 0;
+  }
+
+  .img_case .img__bottom {
+    margin-left: 30%;
+  }
+
+  .middle__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10vw;
+    padding-right: 3vw;
+    background-color: var(--darkbluess);
+  }
+
+  .middle__section .info-card {
+    flex-direction: row;
+    height: 40vh;
+    width: 85%;
+  }
+
+  .info-card .fa-solid {
+    margin: 0 10%;
+  }
+
+  .info-card .description {
+    font-size: 3.5vh;
+    text-align: left;
+    margin-right: 5%;
+  }
+
+  .description__section .tittle__description {
+    font-size: 10vh;
+  }
+
+  .description__section .text_about {
+    font-size: 5vh;
+  }
+
+  .skills__section {
+    margin: 5vh 0;
+  }
+
+  .skills__section .skills_tittle,
+  .skills__section .skills_elements {
+    font-size: 8vh;
+  }
+
+  .skills_elements p {
+    font-size: 5vh;
+  }
+
+  .carousel__section {
+    display: none;
+  }
+
+  .contact_section {
+    display: flex;
+    top: 225vh;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    height: 100%;
+    margin-left: 0;
+  }
+
+  .contact_section .contact_section__tittle {
+    margin-bottom: 12vh;
+  }
+
+  .contact_section .contact_main {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "left""right""bottom";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10vh 0;
+    text-align: center;
+  }
+
+  .contact_main .tittle {
+    margin-bottom: 7vh;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .contact_main .contact_txt {
+    font-size: 1.5rem;
+  }
+
+  .contact_main .contact_data {
+    grid-column: 1/-1;
+  }
+
+  .contact_data .contact_tittle {
+    margin-bottom: 5vh;
+    font-size: 2.3rem;
+  }
+
+  .contact_data .contact_data_case {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact_data_case i.fa-envelope {
+    margin-right: 3%;
+    margin-top: 1vh;
+    font-size: 40px;
+  }
+
+  .contact_data_case .contact_txt {
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  .contact_data_case i.fa-regular {
+    margin-right: 3%;
+    margin-top: 1vh;
+    font-size: 40px;
+  }
+
+  .footer_section {
+    top: 375vh;
+    padding-left: 33vh;
+    padding-right: 33vh;
+    height: 18vh;
+  }
+
+  /* TODO: */
+
+}
