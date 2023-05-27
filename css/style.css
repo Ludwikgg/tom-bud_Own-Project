@@ -5,6 +5,7 @@ font-family: 'Roboto', sans-serif;
 :root {
   --whitegrey: rgba(207, 207, 207, 1);
   --darkblue: rgba(93, 118, 138, 1);
+  --bluelighter: rgb(157, 180, 199);
   --darkshadow: rgba(0, 0, 0, 0.4);
   --darklighter: rgba(0, 0, 0, 0.60);
 }
@@ -224,7 +225,7 @@ body {
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  height: 100vh;
+  height: 105vh;
   position: absolute;
   top: 120vh;
   left: calc(50% - (80%/2));
@@ -232,7 +233,8 @@ body {
 }
 
 .description__section .tittle__description {
-  font-size: 5vh;
+  font-size: 2.2rem;
+  font-weight: bold;
   border-bottom: 3px solid var(--darkshadow);
   color: var(--whitegrey);
   padding-bottom: 20px;
@@ -246,6 +248,7 @@ body {
   color: var(--whitegrey);
   padding: 3vh 0;
   border-bottom: 3px solid var(--darkshadow);
+  font-size: 2.5vh;
 }
 
 .description__section .skills__section {
@@ -255,7 +258,7 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--whitegrey);
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
 }
 
 .skills__section .skills_tittle {
@@ -265,6 +268,7 @@ body {
   text-transform: uppercase;
   font-size: 1.4rem;
   text-align: center;
+  font-weight: bold;
 }
 
 .skills__section .skills_list {
@@ -281,7 +285,6 @@ body {
 }
 
 .skills_elements p {
-  font-weight: bold;
   font-size: 1.2rem;
   color: var(--whitegrey);
   text-align: left;
@@ -293,7 +296,7 @@ body {
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  top: 230vh;
+  top: 235vh;
   left: 0;
   height: 100vh;
   width: 100%;
@@ -328,7 +331,6 @@ body {
   width: 100vw !important;
 }
 
-
 .carousel .carousel-caption {
   position: absolute;
   bottom: 20%;
@@ -354,21 +356,21 @@ body {
   margin-left: 3vh;
   padding-top: 5vh;
   justify-content: center;
-  top: 320vh;
+  top: 325vh;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 .contact_section .contact_section__tittle {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   border-bottom: 3px solid var(--darkshadow);
   color: var(--whitegrey);
   padding-bottom: 5px;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  width: 45%;
+  width: 40%;
 }
 
 .contact_section .contact_main {
@@ -379,7 +381,7 @@ body {
 }
 
 .tittle {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--whitegrey)
@@ -391,9 +393,14 @@ body {
 }
 
 .contact_txt {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  color: var(--darklighter)
+  color: var(--darklighter);
+}
+
+.contact_mailing,
+.contact_phone {
+  text-decoration: underline;
 }
 
 .contact_data_case {
@@ -421,7 +428,7 @@ body {
 
 .footer_section {
   position: absolute;
-  top: 400vh;
+  top: 395vh;
   left: 0;
   width: 100%;
   display: flex;
@@ -443,6 +450,10 @@ body {
   font-size: 18px;
   margin: 0;
   padding-bottom: 1%;
+}
+
+.footer_section .attribution a {
+  color: var(--darkblue);
 }
 
 @media (min-width:768px) {
@@ -491,7 +502,7 @@ body {
   }
 
   .description__section {
-    height: 80vh;
+    height: 100vh;
   }
 
   .description__section .tittle__description {
@@ -503,7 +514,6 @@ body {
     font-size: 3vh;
     border-bottom: 4px solid var(--darkshadow);
     padding-top: 0;
-
   }
 
   .skills__section .skills_tittle,
@@ -513,10 +523,6 @@ body {
 
   .skills_elements p {
     font-size: 3vh;
-  }
-
-  .carousel {
-    top: 185vh;
   }
 
   .carousel__section .works_tittle {
@@ -545,13 +551,77 @@ body {
     display: block;
     font-size: 2vh;
   }
+
+  .contact_section {
+    display: flex;
+    top: 335vh;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .contact_section .contact_section__tittle {
+    margin-bottom: 4vh;
+    font-size: 3rem;
+  }
+
+  .contact_section .contact_main {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "left""right""bottom";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4vh 0;
+    text-align: center;
+  }
+
+  .contact_main .tittle {
+    margin-bottom: 2.5vh;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+  .contact_main .adress {
+    margin-left: 15%;
+    width: 70%;
+  }
+
+  .contact_main .adress_tittle {
+    margin-bottom: 2vh;
+  }
+
+  .contact_main .contact_data {
+    grid-column: 1/-1;
+  }
+
+  .contact_data .contact_data_case {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact_data_case i.fa-envelope {
+    margin-right: 3%;
+    font-size: 2.2rem;
+  }
+
+  .contact_data_case .contact_txt {
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  .contact_data_case i.fa-regular {
+    margin-right: 3%;
+    font-size: 2.5rem;
+  }
+
+  .footer_section {
+    top: 390vh;
+    height: 5.5vh;
+  }
 }
-
-@media (min-width:992px) {}
-
-@media (min-width:1200px) {}
-
-@media (min-width:1400px) {}
 
 @media(orientation: landscape) {
   .nav__section {
@@ -616,6 +686,10 @@ body {
     margin-right: 5%;
   }
 
+  .description__section {
+    top: 140vh;
+  }
+
   .description__section .tittle__description {
     font-size: 10vh;
   }
@@ -625,7 +699,7 @@ body {
   }
 
   .skills__section {
-    margin: 5vh 0;
+    margin: 10vh 0 5vh;
   }
 
   .skills__section .skills_tittle,
@@ -643,7 +717,7 @@ body {
 
   .contact_section {
     display: flex;
-    top: 225vh;
+    top: 265vh;
     left: 0;
     align-items: center;
     justify-content: center;
@@ -654,6 +728,7 @@ body {
 
   .contact_section .contact_section__tittle {
     margin-bottom: 12vh;
+    font-size: 2.5rem;
   }
 
   .contact_section .contact_main {
@@ -682,7 +757,7 @@ body {
 
   .contact_data .contact_tittle {
     margin-bottom: 5vh;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 
   .contact_data .contact_data_case {
@@ -692,8 +767,7 @@ body {
 
   .contact_data_case i.fa-envelope {
     margin-right: 3%;
-    margin-top: 1vh;
-    font-size: 40px;
+    font-size: 2.2rem;
   }
 
   .contact_data_case .contact_txt {
@@ -703,17 +777,20 @@ body {
 
   .contact_data_case i.fa-regular {
     margin-right: 3%;
-    margin-top: 1vh;
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .footer_section {
-    top: 375vh;
+    top: 420vh;
     padding-left: 33vh;
     padding-right: 33vh;
-    height: 18vh;
+    height: 15vh;
   }
 
-  /* TODO: */
+  @media (min-width:992px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1400px) {}
 
 }
