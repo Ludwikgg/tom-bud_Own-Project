@@ -5,7 +5,8 @@ font-family: 'Roboto', sans-serif;
 :root {
   --whitegrey: rgba(207, 207, 207, 1);
   --darkblue: rgba(93, 118, 138, 1);
-  --bluelighter: rgb(157, 180, 199);
+  --bluelighter: rgba(157, 180, 199, 1);
+  --bluedarker: rgba(43, 58, 103, 1);
   --darkshadow: rgba(0, 0, 0, 0.4);
   --darklighter: rgba(0, 0, 0, 0.60);
 }
@@ -38,26 +39,6 @@ body {
   height: 100vh;
   overflow: hidden;
   width: 100%;
-}
-
-.header__section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-image: url('../img/pexels-ksenia-chernaya-5691545\(1\).jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.header__bg {
-  height: 100%;
-  width: 100%;
-  background-color: var(--darkshadow);
 }
 
 .nav__section {
@@ -93,6 +74,26 @@ body {
   color: var(--whitegrey);
   cursor: pointer;
   margin-right: 8%;
+}
+
+.header__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('../img/pexels-ksenia-chernaya-5691545\(1\).jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.header__bg {
+  height: 100%;
+  width: 100%;
+  background-color: var(--darkshadow);
 }
 
 .header__description {
@@ -787,10 +788,138 @@ body {
     height: 15vh;
   }
 
-  @media (min-width:992px) {}
+  @media (min-width:992px) {
+    .nav__section {
+      height: 12vh;
+    }
+
+    .nav__section .nav_logo_name {
+      font-size: 6vh;
+      margin-left: 5%;
+    }
+
+    .nav__section .nav__list {
+      display: flex;
+      width: 60%;
+      height: 100%;
+      align-items: center;
+      gap: 20px;
+      margin-top: 2vh;
+    }
+
+    .nav__list .nav__link {
+      text-decoration: none;
+      color: var(--whitegrey);
+      transition: 0.3s;
+      padding: 6px 15px;
+    }
+
+    .nav__list .nav__link:hover {
+      color: var(--bluedarker);
+      background-color: var(--whitegrey);
+      border-radius: 5%;
+    }
+
+    .nav__list .nav__link:nth-last-child(1) {
+      color: var(--bluedarker);
+      background-color: var(--whitegrey);
+      border-radius: 5%;
+    }
+
+    .nav__list .nav__link:nth-last-child(1):hover {
+      color: var(--whitegrey);
+      background-color: var(--bluedarker);
+    }
+
+
+    .nav__link .nav__name {
+      font-size: 1.20rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .nav__section .nav__btn {
+      display: none;
+    }
+
+    .header__description .tittle__description {
+      top: 40%;
+      left: 0;
+      font-size: 4rem;
+    }
+
+    .header__description .second_tittle__description {
+      top: 49%;
+      left: 0%;
+      font-size: 4rem;
+    }
+
+    .bottom__section {
+      height: 15vh;
+      width: 60%;
+    }
+
+    .img_case {
+      left: -10vh;
+      bottom: -5%;
+    }
+
+    .bottom__description {
+      left: 40%;
+      top: -65%;
+      height: 2vh;
+      width: 60%;
+    }
+
+    .bottom__description .bottom__btn {
+      font-size: 2rem;
+      margin-left: -2%;
+      margin-right: auto;
+      border-bottom: 3px solid var(--darkshadow);
+      transition: 0.3s;
+    }
+
+    .bottom__description .bottom__btn:hover {
+      color: var(--bluedarker);
+      border-bottom: 3px solid var(--whitegrey);
+    }
+
+
+
+    .middle__section {
+      padding-left: 10%;
+      padding-right: 10%;
+      gap: 50px;
+      height: 90vh;
+      margin-top: 5vh;
+    }
+
+    .middle__section .info-card {
+      height: 35vh;
+      width: 100%;
+    }
+
+    .info-card .fa-solid {
+      font-size: 70px;
+    }
+
+    .info-card .description {
+      font-size: 1.5rem;
+      text-align: left;
+    }
+
+
+    .first_card,
+    .second_card {
+      margin-top: 2vh;
+    }
+
+    .third_card .description {
+      margin-bottom: 0;
+    }
+  }
 
   @media (min-width:1200px) {}
 
   @media (min-width:1400px) {}
-
 }
