@@ -244,7 +244,6 @@ body {
 }
 
 .description__section .text_about {
-  font-size: 3vh;
   text-align: justify;
   color: var(--whitegrey);
   padding: 3vh 0;
@@ -263,9 +262,7 @@ body {
 }
 
 .skills__section .skills_tittle {
-  margin-bottom: 4vh;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 4vh auto;
   text-transform: uppercase;
   font-size: 1.4rem;
   text-align: center;
@@ -653,10 +650,11 @@ body {
   }
 
   .bottom__description .bottom__btn {
-    font-size: 3vw;
-    margin-left: -20%;
+    font-size: 2.5vw;
+    margin-left: -10%;
     margin-right: auto;
     padding-bottom: 0;
+    bottom: 10%;
   }
 
   .img_case .img__bottom {
@@ -831,7 +829,6 @@ body {
       background-color: var(--bluedarker);
     }
 
-
     .nav__link .nav__name {
       font-size: 1.20rem;
       font-weight: bold;
@@ -877,6 +874,7 @@ body {
       margin-right: auto;
       border-bottom: 3px solid var(--darkshadow);
       transition: 0.3s;
+      bottom: calc(50% - 12vw);
     }
 
     .bottom__description .bottom__btn:hover {
@@ -884,14 +882,12 @@ body {
       border-bottom: 3px solid var(--whitegrey);
     }
 
-
-
     .middle__section {
       padding-left: 10%;
       padding-right: 10%;
       gap: 50px;
       height: 90vh;
-      margin-top: 5vh;
+      margin-top: 10vh;
     }
 
     .middle__section .info-card {
@@ -908,7 +904,6 @@ body {
       text-align: left;
     }
 
-
     .first_card,
     .second_card {
       margin-top: 2vh;
@@ -916,6 +911,98 @@ body {
 
     .third_card .description {
       margin-bottom: 0;
+    }
+
+    /* TODO: DOKOŃCZYĆ TĄ SEKCJĘ - DODAC IKONKE DO OSTATNIEJ KARTY ORAZ POMYSLEC NAD ODSTEPAMI MIEDZY TEKSTEM A IKONAMI */
+    .description__section {
+      top: 95vh;
+      left: calc(50% - (80%/2));
+    }
+
+    .description__section .tittle__description {
+      font-size: 4rem;
+    }
+
+    .description__section .text_about {
+      border-bottom: 0.25rem solid var(--darkshadow);
+      padding-bottom: 3vh;
+      padding-top: 5vh;
+      font-size: 1.8rem;
+    }
+
+    .description__section .skills__section {
+      margin: 7vh 0;
+    }
+
+    .skills__section .skills_tittle {
+      margin: 0 auto 4vh auto;
+      font-size: 3rem;
+    }
+
+    .skills__section .skills_list {
+      height: 50%;
+    }
+
+    .skills_list .skills_elements {
+      font-size: 2rem;
+      color: var(--darkshadow);
+    }
+
+    .skills_elements p {
+      font-size: 2rem;
+    }
+
+    .carousel__section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      top: 225vh;
+      left: 0;
+    }
+
+    .carousel__section .works_tittle {
+      font-size: 3.5rem;
+      border-bottom: 0.25rem solid var(--darkshadow);
+    }
+
+    .carousel .carousel-caption,
+    .carousel .carousel-item,
+    .carousel-inner,
+    .w-100 {
+      width: 50vw !important;
+    }
+
+    .carousel .carousel-caption {
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      height: 12vh;
+    }
+
+    .carousel .carousel-caption h5 {
+      font-size: 1.5rem;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 20rem;
+      height: 20rem;
+    }
+
+    .carousel-control-prev {
+      left: -20vh;
+    }
+
+    .carousel-control-next {
+      right: -20vh;
+    }
+
+
+
+
+    .contact_section {
+      top: 400vh;
     }
   }
 
