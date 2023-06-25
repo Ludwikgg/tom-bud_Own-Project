@@ -1032,19 +1032,34 @@ body {
       right: -20vh;
     }
 
-
-
-
-    /* TODO: WZIĄĆ SIĘ ZA SEKCJĘ KONTAKT !!! DODAĆ ZDJĘCIA  !!! */
     .contact_section {
-      top: 320vh;
+      top: 326vh;
+      left: 0;
+      height: 50%;
     }
 
+    .contact_section .contact_section__tittle {
+      margin-bottom: 4vh;
+      font-size: 3.2rem;
+    }
 
+    .contact_section .contact_main {
+      display: grid;
+      width: 100%;
+      grid-template-areas: "left""right""bottom";
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 4vh 0;
+      text-align: center;
+    }
 
+    .contact_main .tittle {
+      margin-bottom: 2.5vh;
+    }
 
-
-
+    .contact_main .adress .contact_txt {
+      font-size: 1.4rem;
+    }
 
     .contact_main .google_map {
       margin-bottom: 10vh;
@@ -1057,14 +1072,207 @@ body {
     }
 
     .footer_section {
-      top: 490vh;
-      padding-left: 33vh;
-      padding-right: 33vh;
-      height: 9vh;
+      top: 445vh;
+      height: 8vh;
+    }
+
+    .footer_section .tom-bud_attribtion {
+      padding-bottom: 0;
+    }
+
+    .footer_section .attributionss {
+      padding-bottom: 0;
     }
   }
 
-  @media (min-width:1200px) {}
+  @media (min-width:1200px) {
+    .nav__section .nav__list {
+      width: 50%;
+    }
 
-  @media (min-width:1400px) {}
-}
+    .bottom__description .bottom__btn {
+      font-size: 2.5rem;
+      bottom: calc(50% - 9vw);
+      margin-left: -4%;
+    }
+
+    .img_case .img__bottom {
+      height: 150%;
+      margin-left: -6%;
+    }
+
+    .img_case {
+      bottom: 100%;
+    }
+
+    .info-card .description {
+      margin-right: 1.4%;
+    }
+
+    .description__section .skills__section {
+      margin: 10vh 0 5vh 0;
+    }
+
+    .footer_section {
+      top: 452vh;
+    }
+
+    .footer_section .tom-bud_attribtion {
+      padding-bottom: 0;
+    }
+
+    .footer_section .attributionss {
+      padding-bottom: 0;
+    }
+  }
+
+  @media (min-width:1400px) {
+    .nav__section .nav__list {
+      width: 45%;
+    }
+
+    .nav__link .nav__name {
+      font-size: 1.4rem;
+    }
+
+    .info-card .description {
+      font-size: 1.8rem;
+    }
+
+    .description__section {
+      top: 90vh;
+    }
+
+    .description__section .tittle__description {
+      font-size: 4.5rem;
+    }
+
+    .carousel__section {
+      top: 215vh;
+    }
+
+    .carousel__section .works_tittle {
+      font-size: 4.2rem;
+    }
+
+    .description__section .text_about {
+      padding-top: 0;
+      font-size: 2.2rem;
+    }
+
+    .skills__section .skills_tittle {
+      font-size: 3.5rem;
+    }
+
+    .bottom__section {
+      width: 50%;
+    }
+
+    .bottom__description .bottom__btn {
+      bottom: calc(50% - 10vw);
+    }
+
+    .description__section .skills__section {
+      margin: 5vh 0 -2vh 0;
+    }
+
+    .contact_section {
+      top: 315vh;
+    }
+
+    .contact_section .contact_section__tittle {
+      font-size: 4.5rem;
+    }
+
+    .contact_main .tittle {
+      font-size: 2.6rem;
+    }
+
+    .contact_main .contact_txt {
+      font-size: 2rem;
+    }
+
+    .contact_main .tittle {
+      font-size: 3rem;
+    }
+
+    .contact_data .contact_data_case {
+      margin-right: 2vh;
+    }
+
+    .contact_main .adress .contact_txt {
+      font-size: 1.8rem;
+    }
+
+    .contact_data_case i.fa-regular {
+      line-height: 6vh;
+    }
+
+    .footer_section {
+      top: 445vh;
+    }
+
+    .footer_section .attribution,
+    .footer_section .attribution a,
+    .tom-bud_attribtion {
+      font-size: 1.5rem;
+      padding: 0;
+    }
+  }
+
+  @media (min-width:1600px) {
+    .nav__section .nav__list {
+      width: 35%;
+    }
+
+    .nav__link .nav__name {
+      font-size: 1.5rem;
+    }
+
+    .info-card .fa-solid {
+      font-size: 6rem;
+    }
+
+    .info-card .description {
+      font-size: 2rem;
+    }
+
+    .bottom__section {
+      width: 40%;
+    }
+
+    .bottom__description .bottom__btn {
+      top: 13.5vh;
+      font-size: 3rem;
+    }
+
+    .description__section .skills__section {
+      margin: 5vh 0 -2vh 0;
+    }
+
+    .contact_main .google_map {
+      margin-bottom: 5vh;
+    }
+
+    .contact_main .google_map iframe {
+      height: 100%;
+      width: 80%;
+      left: 60%;
+    }
+
+    .contact_main .contact_txt {
+      font-size: 2.2rem;
+    }
+
+    .contact_data_case {
+      padding: 0;
+    }
+
+    .contact_data .contact_mail {
+      padding: 3vh 0;
+    }
+
+    .footer_section {
+      top: 453vh;
+    }
+  }
