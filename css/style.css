@@ -299,7 +299,7 @@ body {
   height: 100vh;
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  margin-top: 0 !important;
+  margin-top: 5vh;
 }
 
 .carousel__section .works_tittle {
@@ -352,6 +352,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 3vh;
+  margin-top: 5vh;
   padding-top: 5vh;
   justify-content: center;
   top: 325vh;
@@ -441,7 +442,7 @@ body {
 
 .footer_section {
   position: absolute;
-  top: 430vh;
+  top: 435vh;
   left: 0;
   width: 100%;
   display: flex;
@@ -1276,3 +1277,6 @@ body {
       top: 453vh;
     }
   }
+
+
+  /* TODO: ZROBIĆ JAVASCRIPT*/
