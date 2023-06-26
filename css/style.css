@@ -245,6 +245,7 @@ body {
 
 .description__section .text_about {
   text-align: justify;
+  word-break: break-all;
   color: var(--whitegrey);
   padding: 3vh 0;
   border-bottom: 3px solid var(--darkshadow);
@@ -294,12 +295,11 @@ body {
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  top: 235vh;
+  top: 240vh;
   left: 0;
   height: 100vh;
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  margin-top: 5vh;
 }
 
 .carousel__section .works_tittle {
@@ -358,7 +358,7 @@ body {
   top: 325vh;
   left: 0;
   width: 100%;
-  height: 120vh;
+  height: 122vh;
 }
 
 .contact_section .contact_section__tittle {
@@ -370,7 +370,7 @@ body {
   text-align: center;
   font-weight: bold;
   width: 40%;
-  margin-bottom: 10vh;
+  margin-bottom: 7vh;
 }
 
 .contact_section .contact_main {
@@ -456,13 +456,12 @@ body {
 .footer_section .attribution,
 .footer_section .attribution a,
 .tom-bud_attribtion {
-  margin-top: 2%;
+  margin-top: 6%;
   color: var(--whitegrey);
   text-decoration: none;
   font-size: 15px;
   font-weight: bold;
   font-size: 18px;
-  margin: 0;
   padding-bottom: 1%;
 }
 
@@ -642,8 +641,14 @@ body {
   }
 
   .footer_section {
-    top: 425vh;
-    height: 5.5vh;
+    top: 440vh;
+    height: 8vh;
+  }
+
+  .footer_section .attribution,
+  .footer_section .attribution a,
+  .tom-bud_attribtion {
+    margin-top: 3vh;
   }
 }
 
@@ -821,462 +826,477 @@ body {
     padding-right: 33vh;
     height: 15vh;
   }
+}
 
-  @media (min-width:992px) {
-    .nav__section {
-      height: 12vh;
-    }
-
-    .nav__section .nav_logo_name {
-      font-size: 6vh;
-      margin-left: 5%;
-    }
-
-    .nav__section .nav__list {
-      display: flex;
-      width: 60%;
-      height: 100%;
-      align-items: center;
-      gap: 20px;
-      margin-top: 2vh;
-    }
-
-    .nav__list .nav__link {
-      text-decoration: none;
-      color: var(--whitegrey);
-      transition: 0.3s;
-      padding: 6px 15px;
-    }
-
-    .nav__list .nav__link:hover {
-      color: var(--bluedarker);
-      background-color: var(--whitegrey);
-      border-radius: 5%;
-    }
-
-    .nav__list .nav__link:nth-last-child(1) {
-      color: var(--bluedarker);
-      background-color: var(--whitegrey);
-      border-radius: 5%;
-    }
-
-    .nav__list .nav__link:nth-last-child(1):hover {
-      color: var(--whitegrey);
-      background-color: var(--bluedarker);
-    }
-
-    .nav__link .nav__name {
-      font-size: 1.20rem;
-      font-weight: bold;
-      margin: 0;
-    }
-
-    .nav__section .nav__btn {
-      display: none;
-    }
-
-    .header__description .tittle__description {
-      top: 40%;
-      left: 0;
-      font-size: 4rem;
-    }
-
-    .header__description .second_tittle__description {
-      top: 49%;
-      left: 0%;
-      font-size: 4rem;
-    }
-
-    .bottom__section {
-      height: 15vh;
-      width: 60%;
-    }
-
-    .img_case {
-      left: -10vh;
-      bottom: -5%;
-    }
-
-    .bottom__description {
-      left: 40%;
-      top: -65%;
-      height: 2vh;
-      width: 60%;
-    }
-
-    .bottom__description .bottom__btn {
-      font-size: 2rem;
-      margin-left: -2%;
-      margin-right: auto;
-      border-bottom: 3px solid var(--darkshadow);
-      transition: 0.3s;
-      bottom: calc(50% - 12vw);
-    }
-
-    .bottom__description .bottom__btn:hover {
-      color: var(--bluedarker);
-      border-bottom: 3px solid var(--whitegrey);
-    }
-
-    .middle__section {
-      padding-left: 10%;
-      padding-right: 10%;
-      gap: 50px;
-      height: 90vh;
-      margin-top: 10vh;
-    }
-
-    .middle__section .info-card {
-      height: 35vh;
-      width: 100%;
-    }
-
-    .info-card .fa-solid {
-      font-size: 70px;
-    }
-
-    .info-card .description {
-      font-size: 1.5rem;
-      text-align: left;
-    }
-
-    .first_card,
-    .second_card {
-      margin-top: 2vh;
-    }
-
-    .third_card .description {
-      margin-bottom: 0;
-    }
-
-    .description__section {
-      top: 95vh;
-      left: calc(50% - (80%/2));
-    }
-
-    .description__section .tittle__description {
-      font-size: 4rem;
-    }
-
-    .description__section .text_about {
-      border-bottom: 0.25rem solid var(--darkshadow);
-      padding-bottom: 3vh;
-      padding-top: 5vh;
-      font-size: 1.8rem;
-    }
-
-    .description__section .skills__section {
-      margin: 7vh 0;
-    }
-
-    .skills__section .skills_tittle {
-      margin: 0 auto 4vh auto;
-      font-size: 3rem;
-    }
-
-    .skills__section .skills_list {
-      height: 50%;
-    }
-
-    .skills_list .skills_elements {
-      font-size: 2rem;
-      color: var(--darkshadow);
-    }
-
-    .skills_elements p {
-      font-size: 2rem;
-    }
-
-    .carousel__section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      top: 225vh;
-      left: 0;
-    }
-
-    .carousel__section .works_tittle {
-      font-size: 3.5rem;
-      border-bottom: 0.25rem solid var(--darkshadow);
-    }
-
-    .carousel .carousel-caption,
-    .carousel .carousel-item,
-    .carousel-inner,
-    .w-100 {
-      width: 50vw !important;
-    }
-
-    .carousel .carousel-caption {
-      position: absolute;
-      bottom: 10%;
-      left: 0;
-      height: 12vh;
-    }
-
-    .carousel .carousel-caption h5 {
-      font-size: 1.5rem;
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      width: 20rem;
-      height: 20rem;
-    }
-
-    .carousel-control-prev {
-      left: -20vh;
-    }
-
-    .carousel-control-next {
-      right: -20vh;
-    }
-
-    .contact_section {
-      top: 326vh;
-      left: 0;
-      height: 50%;
-    }
-
-    .contact_section .contact_section__tittle {
-      margin-bottom: 4vh;
-      font-size: 3.2rem;
-    }
-
-    .contact_section .contact_main {
-      display: grid;
-      width: 100%;
-      grid-template-areas: "left""right""bottom";
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 4vh 0;
-      text-align: center;
-    }
-
-    .contact_main .tittle {
-      margin-bottom: 2.5vh;
-    }
-
-    .contact_main .adress .contact_txt {
-      font-size: 1.4rem;
-    }
-
-    .contact_main .google_map {
-      margin-bottom: 10vh;
-    }
-
-    .contact_main .google_map iframe {
-      left: 40%;
-      height: 120%;
-      width: 120%;
-    }
-
-    .footer_section {
-      top: 445vh;
-      height: 8vh;
-    }
-
-    .footer_section .tom-bud_attribtion {
-      padding-bottom: 0;
-    }
-
-    .footer_section .attributionss {
-      padding-bottom: 0;
-    }
+@media (min-width:992px) {
+  .nav__section {
+    height: 12vh;
   }
 
-  @media (min-width:1200px) {
-    .nav__section .nav__list {
-      width: 50%;
-    }
-
-    .bottom__description .bottom__btn {
-      font-size: 2.5rem;
-      bottom: calc(50% - 9vw);
-      margin-left: -4%;
-    }
-
-    .img_case .img__bottom {
-      height: 150%;
-      margin-left: -6%;
-    }
-
-    .img_case {
-      bottom: 100%;
-    }
-
-    .info-card .description {
-      margin-right: 1.4%;
-    }
-
-    .description__section .skills__section {
-      margin: 10vh 0 5vh 0;
-    }
-
-    .footer_section {
-      top: 452vh;
-    }
-
-    .footer_section .tom-bud_attribtion {
-      padding-bottom: 0;
-    }
-
-    .footer_section .attributionss {
-      padding-bottom: 0;
-    }
+  .nav__section .nav_logo_name {
+    font-size: 6vh;
+    margin-left: 5%;
   }
 
-  @media (min-width:1400px) {
-    .nav__section .nav__list {
-      width: 45%;
-    }
-
-    .nav__link .nav__name {
-      font-size: 1.4rem;
-    }
-
-    .info-card .description {
-      font-size: 1.8rem;
-    }
-
-    .description__section {
-      top: 90vh;
-    }
-
-    .description__section .tittle__description {
-      font-size: 4.5rem;
-    }
-
-    .carousel__section {
-      top: 215vh;
-    }
-
-    .carousel__section .works_tittle {
-      font-size: 4.2rem;
-    }
-
-    .description__section .text_about {
-      padding-top: 0;
-      font-size: 2.2rem;
-    }
-
-    .skills__section .skills_tittle {
-      font-size: 3.5rem;
-    }
-
-    .bottom__section {
-      width: 50%;
-    }
-
-    .bottom__description .bottom__btn {
-      bottom: calc(50% - 10vw);
-    }
-
-    .description__section .skills__section {
-      margin: 5vh 0 -2vh 0;
-    }
-
-    .contact_section {
-      top: 315vh;
-    }
-
-    .contact_section .contact_section__tittle {
-      font-size: 4.5rem;
-    }
-
-    .contact_main .tittle {
-      font-size: 2.6rem;
-    }
-
-    .contact_main .contact_txt {
-      font-size: 2rem;
-    }
-
-    .contact_main .tittle {
-      font-size: 3rem;
-    }
-
-    .contact_data .contact_data_case {
-      margin-right: 2vh;
-    }
-
-    .contact_main .adress .contact_txt {
-      font-size: 1.8rem;
-    }
-
-    .contact_data_case i.fa-regular {
-      line-height: 6vh;
-    }
-
-    .footer_section {
-      top: 445vh;
-    }
-
-    .footer_section .attribution,
-    .footer_section .attribution a,
-    .tom-bud_attribtion {
-      font-size: 1.5rem;
-      padding: 0;
-    }
+  .nav__section .nav__list {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2vh;
   }
 
-  @media (min-width:1600px) {
-    .nav__section .nav__list {
-      width: 35%;
-    }
-
-    .nav__link .nav__name {
-      font-size: 1.5rem;
-    }
-
-    .info-card .fa-solid {
-      font-size: 6rem;
-    }
-
-    .info-card .description {
-      font-size: 2rem;
-    }
-
-    .bottom__section {
-      width: 40%;
-    }
-
-    .bottom__description .bottom__btn {
-      top: 13.5vh;
-      font-size: 3rem;
-    }
-
-    .description__section .skills__section {
-      margin: 5vh 0 -2vh 0;
-    }
-
-    .contact_main .google_map {
-      margin-bottom: 5vh;
-    }
-
-    .contact_main .google_map iframe {
-      height: 100%;
-      width: 80%;
-      left: 60%;
-    }
-
-    .contact_main .contact_txt {
-      font-size: 2.2rem;
-    }
-
-    .contact_data_case {
-      padding: 0;
-    }
-
-    .contact_data .contact_mail {
-      padding: 3vh 0;
-    }
-
-    .footer_section {
-      top: 453vh;
-    }
+  .nav__list .nav__link {
+    text-decoration: none;
+    color: var(--whitegrey);
+    transition: 0.3s;
+    padding: 6px 15px;
   }
 
+  .nav__list .nav__link:hover {
+    color: var(--bluedarker);
+    background-color: var(--whitegrey);
+    border-radius: 5%;
+  }
 
-  /* TODO: ZROBIĆ JAVASCRIPT*/
+  .nav__list .nav__link:nth-last-child(1) {
+    color: var(--bluedarker);
+    background-color: var(--whitegrey);
+    border-radius: 5%;
+  }
+
+  .nav__list .nav__link:nth-last-child(1):hover {
+    color: var(--whitegrey);
+    background-color: var(--bluedarker);
+  }
+
+  .nav__link .nav__name {
+    font-size: 1.20rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .nav__section .nav__btn {
+    display: none;
+  }
+
+  .header__description .tittle__description {
+    top: 40%;
+    left: 0;
+    font-size: 4rem;
+  }
+
+  .header__description .second_tittle__description {
+    top: 49%;
+    left: 0%;
+    font-size: 4rem;
+  }
+
+  .bottom__section {
+    height: 15vh;
+    width: 60%;
+  }
+
+  .img_case {
+    left: -10vh;
+    bottom: -5%;
+  }
+
+  .bottom__description {
+    left: 40%;
+    top: -65%;
+    height: 2vh;
+    width: 60%;
+  }
+
+  .bottom__description .bottom__btn {
+    font-size: 2rem;
+    margin-left: -2%;
+    margin-right: auto;
+    border-bottom: 3px solid var(--darkshadow);
+    transition: 0.3s;
+    bottom: calc(50% - 12vw);
+  }
+
+  .bottom__description .bottom__btn:hover {
+    color: var(--bluedarker);
+    border-bottom: 3px solid var(--whitegrey);
+  }
+
+  .middle__section {
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 50px;
+    height: 90vh;
+    margin-top: 10vh;
+  }
+
+  .middle__section .info-card {
+    height: 35vh;
+    width: 100%;
+  }
+
+  .info-card .fa-solid {
+    font-size: 70px;
+  }
+
+  .info-card .description {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .first_card,
+  .second_card {
+    margin-top: 2vh;
+  }
+
+  .third_card .description {
+    margin-bottom: 0;
+  }
+
+  .description__section {
+    top: 95vh;
+    left: calc(50% - (80%/2));
+  }
+
+  .description__section .tittle__description {
+    font-size: 4rem;
+  }
+
+  .description__section .text_about {
+    border-bottom: 0.25rem solid var(--darkshadow);
+    padding-bottom: 3vh;
+    padding-top: 5vh;
+    font-size: 1.8rem;
+  }
+
+  .description__section .skills__section {
+    margin: 7vh 0;
+  }
+
+  .skills__section .skills_tittle {
+    margin: 0 auto 4vh auto;
+    font-size: 3rem;
+  }
+
+  .skills__section .skills_list {
+    height: 50%;
+  }
+
+  .skills_list .skills_elements {
+    font-size: 2rem;
+    color: var(--darkshadow);
+  }
+
+  .skills_elements p {
+    font-size: 2rem;
+  }
+
+  .carousel__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 225vh;
+    left: 0;
+  }
+
+  .carousel__section .works_tittle {
+    font-size: 3.5rem;
+    border-bottom: 0.25rem solid var(--darkshadow);
+  }
+
+  .carousel .carousel-caption,
+  .carousel .carousel-item,
+  .carousel-inner,
+  .w-100 {
+    width: 50vw !important;
+  }
+
+  .carousel .carousel-caption {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    height: 12vh;
+  }
+
+  .carousel .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .carousel-control-prev {
+    left: -20vh;
+  }
+
+  .carousel-control-next {
+    right: -20vh;
+  }
+
+  .contact_section {
+    top: 326vh;
+    left: 0;
+    height: 50%;
+  }
+
+  .contact_section .contact_section__tittle {
+    margin-bottom: 4vh;
+    font-size: 3.2rem;
+  }
+
+  .contact_section .contact_main {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "left""right""bottom";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4vh 0;
+    text-align: center;
+  }
+
+  .contact_main .tittle {
+    margin-bottom: 2.5vh;
+  }
+
+  .contact_main .adress .contact_txt {
+    font-size: 1.4rem;
+  }
+
+  .contact_main .google_map {
+    margin-bottom: 10vh;
+  }
+
+  .contact_main .google_map iframe {
+    left: 40%;
+    height: 120%;
+    width: 120%;
+  }
+
+  .footer_section {
+    top: 445vh;
+    height: 8vh;
+  }
+
+  .footer_section .tom-bud_attribtion {
+    padding-bottom: 0;
+  }
+
+  .footer_section .attributionss {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width:1200px) {
+  .nav__section .nav__list {
+    width: 50%;
+  }
+
+  .bottom__description .bottom__btn {
+    font-size: 2.5rem;
+    bottom: calc(50% - 15vh);
+    margin-left: -4%;
+  }
+
+  .img_case .img__bottom {
+    height: 150%;
+    margin-left: -6%;
+  }
+
+  .img_case {
+    bottom: 100%;
+  }
+
+  .info-card .description {
+    margin-right: 1.4%;
+  }
+
+  .description__section .skills__section {
+    margin: 10vh 0 5vh 0;
+  }
+
+  .carousel__section {
+    top: 220vh;
+  }
+
+  .contact_section {
+    top: 320vh;
+  }
+
+  .footer_section {
+    top: 440vh;
+  }
+
+  .footer_section .attribution,
+  .footer_section .attribution a,
+  .tom-bud_attribtion {
+    margin-top: 4%;
+  }
+}
+
+@media (min-width:1400px) {
+  .nav__section .nav__list {
+    width: 45%;
+  }
+
+  .nav__link .nav__name {
+    font-size: 1.4rem;
+  }
+
+  .info-card .description {
+    font-size: 1.8rem;
+  }
+
+  .description__section {
+    top: 90vh;
+  }
+
+  .description__section .tittle__description {
+    font-size: 4.5rem;
+  }
+
+  .carousel__section {
+    top: 215vh;
+  }
+
+  .carousel__section .works_tittle {
+    font-size: 4.2rem;
+  }
+
+  .description__section .text_about {
+    padding-top: 0;
+    font-size: 2.2rem;
+  }
+
+  .skills__section .skills_tittle {
+    font-size: 3.5rem;
+  }
+
+  .bottom__section {
+    width: 50%;
+  }
+
+  .bottom__description .bottom__btn {
+    bottom: calc(50% - 8vw);
+  }
+
+  .description__section .skills__section {
+    margin: 5vh 0 -2vh 0;
+  }
+
+  .contact_section {
+    top: 315vh;
+  }
+
+  .contact_section .contact_section__tittle {
+    font-size: 4.5rem;
+  }
+
+  .contact_main .tittle {
+    font-size: 2.6rem;
+  }
+
+  .contact_main .contact_txt {
+    font-size: 2rem;
+  }
+
+  .contact_main .tittle {
+    font-size: 3rem;
+  }
+
+  .contact_data .contact_data_case {
+    margin-right: 2vh;
+  }
+
+  .contact_main .adress .contact_txt {
+    font-size: 1.8rem;
+  }
+
+  .contact_data_case i.fa-regular {
+    line-height: 6vh;
+  }
+
+  .footer_section {
+    top: 460vh;
+  }
+
+  .footer_section .attribution,
+  .footer_section .attribution a,
+  .tom-bud_attribtion {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width:1600px) {
+  .nav__section .nav__list {
+    width: 35%;
+  }
+
+  .nav__link .nav__name {
+    font-size: 1.5rem;
+  }
+
+  .info-card .fa-solid {
+    font-size: 6rem;
+  }
+
+  .info-card .description {
+    font-size: 2rem;
+  }
+
+  .bottom__section {
+    width: 40%;
+  }
+
+  .bottom__description .bottom__btn {
+    top: 13.5vh;
+    font-size: 3rem;
+  }
+
+  .description__section .skills__section {
+    margin: 5vh 0 -2vh 0;
+  }
+
+  .contact_main .google_map {
+    margin-bottom: 5vh;
+  }
+
+  .contact_main .google_map iframe {
+    height: 100%;
+    width: 80%;
+    left: 60%;
+  }
+
+  .contact_main .contact_txt {
+    font-size: 2.2rem;
+  }
+
+  .contact_data_case {
+    padding: 0;
+  }
+
+  .contact_data .contact_mail {
+    padding: 3vh 0;
+  }
+
+  .footer_section {
+    top: 453vh;
+    height: 10vh;
+  }
+
+  .footer_section .attribution,
+  .footer_section .attribution a,
+  .tom-bud_attribtion {
+    margin: 0;
+  }
+}
+
+
+/* TODO: ZROBIĆ JAVASCRIPT*/
