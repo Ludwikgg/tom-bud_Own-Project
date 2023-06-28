@@ -297,7 +297,7 @@ body {
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  top: 230vh;
+  top: 210vh;
   left: 0;
   height: 100vh;
   width: 100%;
@@ -320,7 +320,7 @@ body {
 }
 
 .carousel .carousel-item {
-  height: 90vh;
+  height: 60vh;
 }
 
 .carousel .carousel-item img {
@@ -333,7 +333,7 @@ body {
 
 .carousel .carousel-caption {
   position: absolute;
-  bottom: 20%;
+  bottom: 5%;
   left: 0;
   background-color: var(--darklighter);
   width: 100%;
@@ -357,7 +357,7 @@ body {
   margin-top: 5vh;
   padding-top: 5vh;
   justify-content: center;
-  top: 315vh;
+  top: 280vh;
   left: 0;
   width: 100%;
   height: 110vh;
@@ -444,7 +444,7 @@ body {
 
 .footer_section {
   position: absolute;
-  top: 415vh;
+  top: 380vh;
   left: 0;
   width: 100%;
   display: flex;
@@ -823,10 +823,10 @@ body {
   }
 
   .footer_section {
-    top: 490vh;
+    top: 425vh;
     padding-left: 33vh;
     padding-right: 33vh;
-    height: 15vh;
+    height: 10vh;
   }
 }
 
@@ -1009,6 +1009,10 @@ body {
     border-bottom: 0.25rem solid var(--darkshadow);
   }
 
+  .carousel .carousel-item {
+    height: 85vh;
+  }
+
   .carousel .carousel-caption,
   .carousel .carousel-item,
   .carousel-inner,
@@ -1018,13 +1022,17 @@ body {
 
   .carousel .carousel-caption {
     position: absolute;
-    bottom: 10%;
+    bottom: 3%;
     left: 0;
     height: 12vh;
   }
 
   .carousel .carousel-caption h5 {
     font-size: 1.5rem;
+  }
+
+  .carousel .carousel-item .scaffolding-txt h5 {
+    font-size: 1rem;
   }
 
   .carousel-control-prev-icon,
@@ -1126,12 +1134,24 @@ body {
     top: 220vh;
   }
 
+  .carousel .carousel-item {
+    height: 100vh;
+  }
+
+  .carousel .carousel-caption {
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    height: 12vh;
+  }
+
+
   .contact_section {
-    top: 320vh;
+    top: 325vh;
   }
 
   .footer_section {
-    top: 440vh;
+    top: 450vh;
   }
 
   .footer_section .attribution,
@@ -1191,8 +1211,28 @@ body {
     margin: 5vh 0 -2vh 0;
   }
 
+  .carousel__section {
+    top: 230vh;
+  }
+
+  .carousel .carousel-caption,
+  .carousel .carousel-item,
+  .carousel-inner,
+  .w-100 {
+    width: 40vw !important;
+    height: auto;
+    max-height: 90vh;
+  }
+
+  .carousel .carousel-caption {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    height: 12vh;
+  }
+
   .contact_section {
-    top: 315vh;
+    top: 340vh;
   }
 
   .contact_section .contact_section__tittle {
@@ -1224,7 +1264,7 @@ body {
   }
 
   .footer_section {
-    top: 460vh;
+    top: 483vh;
   }
 
   .footer_section .attribution,
@@ -1299,6 +1339,3 @@ body {
     margin: 0;
   }
 }
-
-
-/* TODO: DODAĆ ZDJĘCIA > JAK U MAMY WSZYSTKO OK > SZROBIĆ JAVASCRIPT*/
