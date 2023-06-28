@@ -244,12 +244,13 @@ body {
 }
 
 .description__section .text_about {
+  hyphens: auto;
   text-align: justify;
-  word-break: break-all;
+  word-spacing: -0.5px;
   color: var(--whitegrey);
-  padding: 3vh 0;
+  padding: 0 0 3vh 0;
   border-bottom: 3px solid var(--darkshadow);
-  font-size: 2.5vh;
+  font-size: 2.2vh;
 }
 
 .description__section .skills__section {
@@ -276,6 +277,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: 5vh;
 }
 
 .skills_list .skills_elements {
@@ -295,7 +297,7 @@ body {
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  top: 240vh;
+  top: 230vh;
   left: 0;
   height: 100vh;
   width: 100%;
@@ -355,10 +357,10 @@ body {
   margin-top: 5vh;
   padding-top: 5vh;
   justify-content: center;
-  top: 325vh;
+  top: 315vh;
   left: 0;
   width: 100%;
-  height: 122vh;
+  height: 110vh;
 }
 
 .contact_section .contact_section__tittle {
@@ -370,7 +372,7 @@ body {
   text-align: center;
   font-weight: bold;
   width: 40%;
-  margin-bottom: 7vh;
+  margin-bottom: 6vh;
 }
 
 .contact_section .contact_main {
@@ -442,7 +444,7 @@ body {
 
 .footer_section {
   position: absolute;
-  top: 435vh;
+  top: 415vh;
   left: 0;
   width: 100%;
   display: flex;
@@ -1299,4 +1301,4 @@ body {
 }
 
 
-/* TODO: ZROBIĆ JAVASCRIPT*/
+/* TODO: DODAĆ ZDJĘCIA > JAK U MAMY WSZYSTKO OK > SZROBIĆ JAVASCRIPT*/
