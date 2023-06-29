@@ -226,7 +226,7 @@ body {
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  height: 105vh;
+  height: 90vh;
   position: absolute;
   top: 120vh;
   left: calc(50% - (80%/2));
@@ -254,13 +254,12 @@ body {
 }
 
 .description__section .skills__section {
-  height: 25%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: var(--whitegrey);
-  margin-bottom: 10vh;
 }
 
 .skills__section .skills_tittle {
@@ -297,11 +296,12 @@ body {
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  top: 210vh;
+  top: 215vh;
   left: 0;
   height: 100vh;
   width: 100%;
   font-family: 'Roboto', sans-serif;
+  margin-top: 5vh;
 }
 
 .carousel__section .works_tittle {
@@ -320,7 +320,7 @@ body {
 }
 
 .carousel .carousel-item {
-  height: 60vh;
+  height: 75vh;
 }
 
 .carousel .carousel-item img {
@@ -357,10 +357,10 @@ body {
   margin-top: 5vh;
   padding-top: 5vh;
   justify-content: center;
-  top: 280vh;
+  top: 315vh;
   left: 0;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
 }
 
 .contact_section .contact_section__tittle {
@@ -372,14 +372,14 @@ body {
   text-align: center;
   font-weight: bold;
   width: 40%;
-  margin-bottom: 6vh;
+  margin-bottom: 5vh;
 }
 
 .contact_section .contact_main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 60%;
+  height: 90%;
 }
 
 .tittle {
@@ -444,7 +444,7 @@ body {
 
 .footer_section {
   position: absolute;
-  top: 380vh;
+  top: 415vh;
   left: 0;
   width: 100%;
   display: flex;
@@ -569,7 +569,7 @@ body {
 
   .contact_section {
     display: flex;
-    top: 335vh;
+    top: 318vh;
     left: 0;
     align-items: center;
     justify-content: center;
@@ -643,7 +643,7 @@ body {
   }
 
   .footer_section {
-    top: 440vh;
+    top: 400vh;
     height: 8vh;
   }
 
@@ -823,10 +823,16 @@ body {
   }
 
   .footer_section {
-    top: 425vh;
+    top: 499vh;
     padding-left: 33vh;
     padding-right: 33vh;
-    height: 10vh;
+    height: 15vh;
+  }
+
+  .footer_section .attribution,
+  .footer_section .attribution a,
+  .tom-bud_attribtion {
+    margin-top: 5vh;
   }
 }
 
@@ -1151,7 +1157,7 @@ body {
   }
 
   .footer_section {
-    top: 450vh;
+    top: 435vh;
   }
 
   .footer_section .attribution,
@@ -1170,33 +1176,46 @@ body {
     font-size: 1.4rem;
   }
 
+  .middle__section {
+    margin-top: 12vh;
+    height: 40vh;
+    gap: 100px;
+  }
+
+  .middle__section .info-card {
+    height: 25vh;
+  }
+
   .info-card .description {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    margin: 2vh 0;
   }
 
   .description__section {
-    top: 90vh;
+    top: 70vh;
   }
 
   .description__section .tittle__description {
     font-size: 4.5rem;
   }
 
-  .carousel__section {
-    top: 215vh;
-  }
-
-  .carousel__section .works_tittle {
-    font-size: 4.2rem;
+  .description__section {
+    width: 60%;
+    left: calc(50% - 30%);
+    height: 80vh;
   }
 
   .description__section .text_about {
     padding-top: 0;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
 
   .skills__section .skills_tittle {
     font-size: 3.5rem;
+  }
+
+  .skills_elements p {
+    font-size: 1.7rem;
   }
 
   .bottom__section {
@@ -1212,7 +1231,11 @@ body {
   }
 
   .carousel__section {
-    top: 230vh;
+    top: 180vh;
+  }
+
+  .carousel__section .works_tittle {
+    font-size: 3.2rem;
   }
 
   .carousel .carousel-caption,
@@ -1232,31 +1255,27 @@ body {
   }
 
   .contact_section {
-    top: 340vh;
+    top: 288vh;
+    left: calc(50% - 35%);
+    width: 70%;
   }
 
   .contact_section .contact_section__tittle {
-    font-size: 4.5rem;
+    font-size: 3.2rem;
   }
 
   .contact_main .tittle {
-    font-size: 2.6rem;
-  }
-
-  .contact_main .contact_txt {
     font-size: 2rem;
-  }
-
-  .contact_main .tittle {
-    font-size: 3rem;
   }
 
   .contact_data .contact_data_case {
     margin-right: 2vh;
   }
 
-  .contact_main .adress .contact_txt {
-    font-size: 1.8rem;
+  .contact_main .adress .contact_txt,
+  .contact_main .contact_txt {
+    font-size: 1.4rem;
+    padding-top: 5px;
   }
 
   .contact_data_case i.fa-regular {
@@ -1264,7 +1283,7 @@ body {
   }
 
   .footer_section {
-    top: 483vh;
+    top: 400vh;
   }
 
   .footer_section .attribution,
@@ -1285,12 +1304,21 @@ body {
     font-size: 1.5rem;
   }
 
+  .middle__section {
+    width: 80%;
+    left: calc(50% - 40%);
+  }
+
+  .description__section {
+    top: 65vh;
+  }
+
   .info-card .fa-solid {
     font-size: 6rem;
   }
 
   .info-card .description {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   .bottom__section {
@@ -1302,8 +1330,36 @@ body {
     font-size: 3rem;
   }
 
+  .carousel__section {
+    top: 165vh;
+  }
+
+  .carousel .carousel-caption,
+  .carousel .carousel-item,
+  .carousel-inner,
+  .w-100 {
+    width: 30vw !important;
+  }
+
+  .carousel .carousel-item img {
+    height: auto;
+    max-height: 80vh;
+  }
+
+  .carousel .carousel-caption {
+    height: 8vh;
+  }
+
+  .carousel .carousel-caption h5 {
+    margin: 0;
+  }
+
   .description__section .skills__section {
     margin: 5vh 0 -2vh 0;
+  }
+
+  .contact_section {
+    top: 264vh;
   }
 
   .contact_main .google_map {
@@ -1329,7 +1385,7 @@ body {
   }
 
   .footer_section {
-    top: 453vh;
+    top: 365vh;
     height: 10vh;
   }
 
@@ -1339,3 +1395,5 @@ body {
     margin: 0;
   }
 }
+
+/* TODO: JAK U MAMY WSZYSTKO OK > ZROBIĆ JAVASCRIPT*/
