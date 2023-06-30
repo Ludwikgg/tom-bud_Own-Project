@@ -5,6 +5,7 @@ font-family: 'Roboto', sans-serif;
 :root {
   --whitegrey: rgba(207, 207, 207, 1);
   --darkblue: rgba(93, 118, 138, 1);
+  --lightblue: rgba(93, 118, 138, 0.95);
   --bluelighter: rgba(157, 180, 199, 1);
   --bluedarker: rgba(43, 58, 103, 1);
   --darkshadow: rgba(0, 0, 0, 0.4);
@@ -51,7 +52,7 @@ body {
   z-index: 2;
   height: 10vh;
   width: 100%;
-  background-color: rgba(93, 118, 138, 0.7);
+  background-color: var(--darkblue);
 }
 
 .nav__section .nav_logo_name {
@@ -64,7 +65,41 @@ body {
 }
 
 .nav__section .nav__list {
-  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--lightblue);
+  padding: 22vh 0 20vh 30px;
+}
+
+.nav__list .nav__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--whitegrey);
+}
+
+.nav__list .nav__link p {
+  border-bottom: 3px solid var(--darkshadow);
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+.nav__list .nav__link .fa-regular,
+.nav__list .nav__link .fa-solid {
+  margin-bottom: 5%;
+  font-size: 2.2rem;
 }
 
 .nav__section .nav__btn {
@@ -842,14 +877,19 @@ body {
   }
 
   .nav__section .nav_logo_name {
-    font-size: 6vh;
+    font-size: 2.5rem;
     margin-left: 5%;
   }
 
   .nav__section .nav__list {
+    position: relative;
     display: flex;
-    width: 60%;
-    height: 100%;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 0;
+    padding: 0;
     align-items: center;
     gap: 20px;
     margin-top: 2vh;
@@ -872,6 +912,7 @@ body {
     color: var(--bluedarker);
     background-color: var(--whitegrey);
     border-radius: 5%;
+    margin-right: 20px;
   }
 
   .nav__list .nav__link:nth-last-child(1):hover {
@@ -880,9 +921,14 @@ body {
   }
 
   .nav__link .nav__name {
-    font-size: 1.20rem;
+    font-size: 0.9rem;
     font-weight: bold;
     margin: 0;
+  }
+
+  .nav__list .nav__link .fa-regular,
+  .nav__list .nav__link .fa-solid {
+    font-size: 1.5rem;
   }
 
   .nav__section .nav__btn {
@@ -892,7 +938,7 @@ body {
   .header__description .tittle__description {
     top: 40%;
     left: 0;
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 
   .header__description .second_tittle__description {
@@ -1110,7 +1156,22 @@ body {
 
 @media (min-width:1200px) {
   .nav__section .nav__list {
-    width: 50%;
+    width: 65%;
+  }
+
+  .nav__section .nav_logo_name {
+    font-size: 3rem;
+  }
+
+  .nav__list .nav__link p {
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+  }
+
+  .nav__list .nav__link .fa-regular,
+  .nav__list .nav__link .fa-solid {
+    font-size: 1.8rem;
+    margin-bottom: 3%;
   }
 
   .bottom__description .bottom__btn {
@@ -1169,11 +1230,22 @@ body {
 
 @media (min-width:1400px) {
   .nav__section .nav__list {
-    width: 45%;
+    width: 60%;
   }
 
-  .nav__link .nav__name {
-    font-size: 1.4rem;
+  .nav__section .nav_logo_name {
+    font-size: 3rem;
+  }
+
+  .nav__list .nav__link p {
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+  }
+
+  .nav__list .nav__link .fa-regular,
+  .nav__list .nav__link .fa-solid {
+    font-size: 2rem;
+    margin-bottom: 0;
   }
 
   .middle__section {
@@ -1297,11 +1369,17 @@ body {
 
 @media (min-width:1600px) {
   .nav__section .nav__list {
-    width: 35%;
+    width: 60%;
   }
 
-  .nav__link .nav__name {
+  .nav__list .nav__link p {
     font-size: 1.5rem;
+  }
+
+  .nav__list .nav__link .fa-regular,
+  .nav__list .nav__link .fa-solid {
+    font-size: 2.3rem;
+    margin-bottom: 0;
   }
 
   .middle__section {
@@ -1395,5 +1473,3 @@ body {
     margin: 0;
   }
 }
-
-/* TODO: JAK U MAMY WSZYSTKO OK > ZROBIĆ JAVASCRIPT*/
