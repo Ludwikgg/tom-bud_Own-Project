@@ -17,6 +17,11 @@ font-family: 'Roboto', sans-serif;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  touch-action: manipulation;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -66,7 +71,7 @@ body {
 
 .nav__section .nav__list {
   position: fixed;
-  top: 0;
+  top: -100vh;
   left: 0;
   z-index: -1;
   display: flex;
@@ -77,6 +82,10 @@ body {
   width: 100%;
   background-color: var(--lightblue);
   padding: 22vh 0 20vh 30px;
+}
+
+.nav__section .nav__list.active {
+  top: 0;
 }
 
 .nav__list .nav__link {
@@ -261,7 +270,7 @@ body {
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  height: 90vh;
+  height: 100vh;
   position: absolute;
   top: 120vh;
   left: calc(50% - (80%/2));
@@ -306,12 +315,11 @@ body {
 }
 
 .skills__section .skills_list {
-  height: 30%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 5vh;
 }
 
 .skills_list .skills_elements {
@@ -331,7 +339,7 @@ body {
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  top: 215vh;
+  top: 225vh;
   left: 0;
   height: 100vh;
   width: 100%;
@@ -392,7 +400,7 @@ body {
   margin-top: 5vh;
   padding-top: 5vh;
   justify-content: center;
-  top: 315vh;
+  top: 320vh;
   left: 0;
   width: 100%;
   height: 100vh;
@@ -479,7 +487,7 @@ body {
 
 .footer_section {
   position: absolute;
-  top: 415vh;
+  top: 420vh;
   left: 0;
   width: 100%;
   display: flex;
@@ -1472,8 +1480,4 @@ body {
   .tom-bud_attribtion {
     margin: 0;
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 1cdf9e6495049c05786591a5b12f01b38c149400
