@@ -58,6 +58,8 @@ body {
   height: 10vh;
   width: 100%;
   background-color: var(--darkblue);
+  z-index: 99;
+  border-bottom: 5px solid var(--darkshadow);
 }
 
 .nav__section .nav_logo_name {
@@ -71,8 +73,8 @@ body {
 
 .nav__section .nav__list {
   position: fixed;
-  top: -100vh;
-  left: 0;
+  top: 0;
+  right: -100vh;
   z-index: -1;
   display: flex;
   flex-direction: column;
@@ -82,10 +84,11 @@ body {
   width: 100%;
   background-color: var(--lightblue);
   padding: 22vh 0 20vh 30px;
+  transition: 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .nav__section .nav__list.active {
-  top: 0;
+  right: 0;
 }
 
 .nav__list .nav__link {
@@ -98,6 +101,21 @@ body {
   font-size: 1.5rem;
   color: var(--whitegrey);
 }
+
+@keyframes navItemsAnimation {
+  from {
+    transform: translateX(200%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.nav__link-animation {
+  animation: navItemsAnimation 1s both;
+}
+
 
 .nav__list .nav__link p {
   border-bottom: 3px solid var(--darkshadow);
@@ -275,6 +293,7 @@ body {
   top: 120vh;
   left: calc(50% - (80%/2));
   width: 80%;
+  scroll-margin-top: 30px;
 }
 
 .description__section .tittle__description {
@@ -304,6 +323,7 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--whitegrey);
+  scroll-margin-top: 110px;
 }
 
 .skills__section .skills_tittle {
@@ -344,7 +364,7 @@ body {
   height: 100vh;
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  margin-top: 5vh;
+  scroll-margin-top: 40px;
 }
 
 .carousel__section .works_tittle {
@@ -404,6 +424,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
+  scroll-margin-top: 45px;
 }
 
 .contact_section .contact_section__tittle {
