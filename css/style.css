@@ -218,7 +218,6 @@ body {
 
 .bottom__description .bottom__btn {
   position: relative;
-  color: var(--whitegrey);
   background-color: transparent;
   border: 0;
   font-size: 8vw;
@@ -229,6 +228,11 @@ body {
   margin-left: -2%;
   margin-right: auto;
   border-bottom: 3px solid var(--darkshadow);
+}
+
+.bottom__btn a {
+  text-decoration: none;
+  color: var(--whitegrey)
 }
 
 .middle__section {
@@ -242,6 +246,7 @@ body {
   height: 120vh;
   width: 100%;
   background-color: rgba(100, 120, 138, 1);
+  scroll-margin-top: 60px;
 }
 
 .middle__section .info-card {
@@ -364,7 +369,8 @@ body {
   height: 100vh;
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  scroll-margin-top: 40px;
+  scroll-margin-top: 45px;
+  margin-top: 5vh;
 }
 
 .carousel__section .works_tittle {
@@ -416,9 +422,9 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  margin-left: 3vh;
   margin-top: 5vh;
   padding-top: 5vh;
+  padding-left: 3vh;
   justify-content: center;
   top: 320vh;
   left: 0;
@@ -544,6 +550,16 @@ body {
     font-size: 6vw;
   }
 
+  .nav__list .nav__link {
+    font-size: 3rem;
+  }
+
+  .nav__list .nav__link .fa-regular,
+  .nav__list .nav__link .fa-solid {
+    font-size: 3.5rem;
+    margin-bottom: 3%;
+  }
+
   .header__description .tittle__description {
     font-size: 7vw;
   }
@@ -633,13 +649,14 @@ body {
 
   .contact_section {
     display: flex;
-    top: 318vh;
+    top: 325vh;
     left: 0;
     align-items: center;
     justify-content: center;
     height: 50%;
     margin-left: 0;
     width: 100%;
+    scroll-margin-top: 100px;
   }
 
   .contact_section .contact_section__tittle {
@@ -707,7 +724,7 @@ body {
   }
 
   .footer_section {
-    top: 400vh;
+    top: 408vh;
     height: 8vh;
   }
 
@@ -721,6 +738,11 @@ body {
 @media(orientation: landscape) {
   .nav__section {
     height: 15vh;
+  }
+
+  .nav__section .nav__list {
+    top: 0;
+    right: -300vh;
   }
 
   .nav__section .nav_logo_name {
@@ -784,6 +806,7 @@ body {
 
   .description__section {
     top: 140vh;
+    scroll-margin-top: 70px;
   }
 
   .description__section .tittle__description {
@@ -820,6 +843,7 @@ body {
     margin-top: 10vh;
     height: 100%;
     margin-left: 0;
+    scroll-margin-top: 70px;
   }
 
   .contact_section .contact_section__tittle {
@@ -929,9 +953,10 @@ body {
     color: var(--whitegrey);
     transition: 0.3s;
     padding: 6px 15px;
+    font-size: 0.8rem;
   }
 
-  .nav__list .nav__link:hover {
+  s .nav__list .nav__link p .nav__list .nav__link:hover {
     color: var(--bluedarker);
     background-color: var(--whitegrey);
     border-radius: 5%;
@@ -1002,8 +1027,11 @@ body {
     bottom: calc(50% - 12vw);
   }
 
-  .bottom__description .bottom__btn:hover {
+  .bottom__description .bottom__btn:hover a {
     color: var(--bluedarker);
+  }
+
+  .bottom__description .bottom__btn:hover {
     border-bottom: 3px solid var(--whitegrey);
   }
 
@@ -1083,6 +1111,7 @@ body {
     flex-direction: column;
     top: 225vh;
     left: 0;
+    scroll-margin-top: 100px;
   }
 
   .carousel__section .works_tittle {
@@ -1134,6 +1163,7 @@ body {
     top: 326vh;
     left: 0;
     height: 50%;
+    scroll-margin-top: 100px;
   }
 
   .contact_section .contact_section__tittle {
@@ -1222,12 +1252,17 @@ body {
     margin-right: 1.4%;
   }
 
+  .middle__section {
+    scroll-margin-top: 90px;
+  }
+
   .description__section .skills__section {
     margin: 10vh 0 5vh 0;
   }
 
   .carousel__section {
     top: 220vh;
+    scroll-margin-top: 150px;
   }
 
   .carousel .carousel-item {
@@ -1243,11 +1278,12 @@ body {
 
 
   .contact_section {
-    top: 325vh;
+    top: 330vh;
+    scroll-margin-top: 90px;
   }
 
   .footer_section {
-    top: 435vh;
+    top: 450vh;
   }
 
   .footer_section .attribution,
@@ -1281,6 +1317,7 @@ body {
     margin-top: 12vh;
     height: 40vh;
     gap: 100px;
+    scroll-margin-top: 150px;
   }
 
   .middle__section .info-card {
@@ -1333,6 +1370,7 @@ body {
 
   .carousel__section {
     top: 180vh;
+    scroll-margin-top: 120px;
   }
 
   .carousel__section .works_tittle {
@@ -1359,6 +1397,7 @@ body {
     top: 288vh;
     left: calc(50% - 35%);
     width: 70%;
+    scroll-margin-top: 120px;
   }
 
   .contact_section .contact_section__tittle {
@@ -1414,6 +1453,7 @@ body {
   .middle__section {
     width: 80%;
     left: calc(50% - 40%);
+    scroll-margin-top: 200px;
   }
 
   .description__section {
