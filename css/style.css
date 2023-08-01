@@ -3,8 +3,8 @@ font-family: 'Maven Pro', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 :root {
-  --whitegrey: rgba(207, 207, 207, 1);
-  --darkblue: rgba(93, 118, 138, 1);
+  --whitegrey: rgba(207, 207, 207);
+  --darkblue: rgba(93, 118, 138);
   --lightblue: rgba(93, 118, 138, 0.95);
   --bluelighter: rgba(157, 180, 199, 1);
   --bluedarker: rgba(43, 58, 103, 1);
@@ -1542,3 +1542,6 @@ body {
     margin: 0;
   }
 }
+
+/* TODO: - Dodac opisy do zdjecia
+*/
